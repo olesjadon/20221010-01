@@ -397,6 +397,8 @@
   </div>
   </section>
   
+
+
 <!--Donskova-->
   <section class="w-section_content">
     <div class="w-section_content_text">
@@ -404,27 +406,57 @@
   <p class="w-section_content_text_top">The Cilantro provides a wide selection of venues around Paris to help save your money. Here you can find a variety of exceptional Paris tours, discount dinners, free entry to the main attractions, and other exclusive offers.
   </p>
   </div>
-  <div class="gallery-stacked_section">
-    <figure class="gallery__item galler__item--1">
-    <img class="gallery__image" src="img/zima.jpg" alt="winter">
+  <div class="row">
+    <figure class="col galler__item--1">
+    <img class="gallery__image" src="img/zima.jpg" onclick="openLightbox();toSlide(1)">
     </figure>
-    <figure class="gallery__item galler__item--2">
-    <img class="gallery__image" src="img/zozero.jpg" alt="lake">
+    <figure class="col galler__item--2">
+    <img class="gallery__image" src="img/zozero.jpg" onclick="openLightbox();toSlide(2)">
     </figure>
-    <figure class="gallery__item galler__item--3">
-    <img class="gallery__image" src="img/seameny.jpeg" alt="gulf bild">
+    <figure class="col galler__item--3">
+    <img class="gallery__image" src="img/seameny.jpeg" onclick="openLightbox();toSlide(3)">
     </figure>
-    <figure class="gallery__item galler__item--4">
-      <img class="gallery__image" src="img/zeifele.jpeg" alt="eifeleva">
+    <figure class="col galler__item--4">
+      <img class="gallery__image" src="img/zeifele.jpeg" onclick="openLightbox();toSlide(4)">
     </figure>
-    <figure class="gallery__item galler__item--5">
-    <img class="gallery__image" src="img/seabild.jpg" alt="bild">
+    <figure class="col galler__item--5">
+    <img class="gallery__image" src="img/seabild.jpg" onclick="openLightbox();toSlide(5)">>
     </figure>
-    <figure class="gallery__item galler__item--6">
-      <img class="gallery__image" src="img/zamok.jpeg" alt="lake">
+    <figure class="col galler__item--6">
+      <img class="gallery__image" src="img/zamok.jpeg" onclick="openLightbox();toSlide(6)">>
     </figure>
-  </div>
+      </div>
+
+      <div id="Lightbox" class="modal">
+<span class="close pointer" onclick="closeLightbox()">&times;</span>
+<div class="modal-content">
+<div class="slide">
+<img src="img/zima.jpg" class="image-slide" alt="winter">
+</div>
+<div class="slide">
+  <img src="img/zozero.jpg" class="image-slide" alt="like">
+</div>
+<div class="slide">
+  <img src="img/seameny.jpeg" class="image-slide" alt="sea">
+</div>
+<div class="slide">
+  <img src="img/zeifele.jpeg" class="image-slide" alt="eifel">
+</div>
+<div class="slide">
+  <img src="img/seabild.jpg" class="image-slide" alt="bild sea">
+</div>
+<div class="slide">
+  <img src="img/zamok.jpeg" class="image-slide" alt="castle">
+</div>
+</div>
+
+      </div>
+
   </section>
+
+
+
+
 
     <!--Tetyana Zadvorna-->
     <section class="blog">
@@ -578,6 +610,7 @@
   <script src="js/membership-slider.js"></script>
   <script src="js/war-timer.js"></script>
   <script src="js/contact-form-formspree.js"></script>
+  <script src="js/lightbox.js"></script>
   <script type="module">
     import initGallery from "./js/instagram-modal.js";
     initGallery('api/instagram-galleries.json', {

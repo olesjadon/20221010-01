@@ -15,3 +15,8 @@
   
     renderPartners(partners);
   })();
+
+
+
+  
+  

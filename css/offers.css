@@ -8,7 +8,7 @@
  }
  
  @media(min-width:600px) {
-    .gallery-stacked_section {
+    .row {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, 5vw);
@@ -81,3 +81,24 @@
     line-height: 30px;
     color: rgb(135, 116, 84)
  }
+
+ .gallery__image{
+   transition: 0.3s;
+ }
+
+ .close {
+   color: white;
+   position: absolute;
+   top: 10px;
+   right: 25px;
+   font-size: 35px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #999;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 

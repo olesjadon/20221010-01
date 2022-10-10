@@ -1,4 +1,4 @@
-var slideIndex = 1;
+const slideIndex = 1;
 showSlide(slideIndex);
 
 function openLightbox() {

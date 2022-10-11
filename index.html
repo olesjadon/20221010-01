@@ -198,8 +198,16 @@
     <!--Olesja Donskova-->
        <section class="travel_planing">
   <h2>Profesional travel planing</h2>
+
   <div class="travel_planing_professional">
-<img class="planing_foto"  src="img/case.jpeg" alt="case_foto">
+    <div class="content">
+<img id="myImg"  src="img/case.jpeg" alt="case_foto">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+    </div>
+  
 <div class="travel_planing_text">
   <p>
     If you are planning a trip to France, Cilantro is the best
@@ -407,25 +415,26 @@
   </p>
   </div>
   <div class="row">
-    <figure class="column galler__item--1">
+    <figure class="galler__item--1">
     <img class="gallery__image hover-shadow" src="img/zima.jpg" onclick="openModal();currentSlide(1)">
     </figure>
-    <figure class="column galler__item--2">
+    <figure class="galler__item--2">
     <img class="gallery__image hover-shadow" src="img/zozero.jpg" onclick="openModal();currentSlide(2)">
     </figure>
-    <figure class="column galler__item--3">
+    <figure class="galler__item--3">
     <img class="gallery__image hover-shadow" src="img/seameny.jpeg" onclick="openModal();currentSlide(3)">
     </figure>
-    <figure class="column galler__item--4">
+    <figure class="galler__item--4">
       <img class="gallery__image hover-shadow" src="img/zeifele.jpeg" onclick="openModal();currentSlide(4)">
     </figure>
-    <figure class="column galler__item--5">
+    <figure class="galler__item--5">
     <img class="gallery__image hover-shadow" src="img/seabild.jpg" onclick="openModal();currentSlide(5)">>
     </figure>
-    <figure class="column galler__item--6">
+    <figure class="galler__item--6">
       <img class="gallery__image hover-shadow" src="img/zamok.jpeg" onclick="openModal();currentSlide(6)">>
     </figure>
       </div>
+
 
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -450,7 +459,7 @@
 </div>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides (1)">&#10095;</a>
-
+  
 <div class="column">
 <img class="demo" src="img/zima.jpg" onclick="currentSlide(1)" alt="winter">
 </div>
@@ -470,7 +479,8 @@
           <img class="demo" src="img/zamok.jpeg" onclick="currentSlide(6)" alt="castle">
           </div>
 </div>
-        </div>
+      </div>
+        
       
 
 

@@ -82,7 +82,16 @@
     color: rgb(135, 116, 84)
  }
 
- .row:after {
+.mySlides {
+   display: none;
+}
+
+.column {
+   float: left;
+   width: 25%;
+}
+
+.row:after {
    content: "";
    display: table;
    clear: both;
@@ -140,6 +149,13 @@ img.hover-shadow {
     img.hover-shadow {
       transition: 0.3s;
     }
-    .hover-shadow:hover {
-      box-shadow: 0 4px 8px 0 rdba(0, 0, 0, 0.2); 0 6px 20px 0 rdba(0, 0, 0, 0.19)
-    }
+   .modal{
+      display: inline;
+      z-index: 1;
+      padding-top: 100px;
+      overflow: hidden;
+   }
+.content {
+   display: table;
+   
+}
